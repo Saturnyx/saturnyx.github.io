@@ -1,7 +1,82 @@
+html {
+    background-color: var(--bg-color);
+    padding: 0;
+    margin: 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
 body {
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    font-family: "DM Sans", sans-serif;
+    padding: 0;
+    margin: 0;
 }
 h1 {
-    color: blue;
+    color: var(--title-color);
+    font-family: "Sansation", sans-serif;
+    font-weight: 700;
+    font-size: 7vw;
+    width: 100%;
+    padding-top: 2vw;
+    text-align: center;
+    margin: 0;
+}
+p {
+    color: var(--text-color);
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.5vw;
+    padding-left: 5vw;
+    padding-left: 5vw;
+}
+
+.wall {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--wall-bg-color);
+    padding: 0;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+.image {
+    height: 110%;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+}
+.image1 {
+    z-index: 11;
+}
+.image2 {
+    z-index: 12;
+}
+.image3 {
+    z-index: 13;
+}
+.image4 {
+    z-index: 14;
+}
+.image5 {
+    z-index: 15;
+}
+.image6 {
+    z-index: 16;
+}
+.image7 {
+    z-index: 17;
+}
+.image8 {
+    z-index: 18;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+:root {
+    --wall-bg-color: hsl(0, 0%, 100%);
+    --bg-color: hsl(0, 0%, 0%);
+    --title-color: hsl(0, 0%, 10%);
+    --text-color: hsl(0, 0%, 100%);
+    --z: 20;
 }
