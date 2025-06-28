@@ -5,30 +5,55 @@ html {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
+
 body {
     background-color: var(--bg-color);
     font-family: "DM Sans", sans-serif;
     padding: 0;
     margin: 0;
 }
+
 h1 {
     color: var(--title-color);
     font-family: "Lexend", sans-serif;
     font-weight: 700;
-    font-size: 11vw;
+    font-size: 7vw;
     width: 100%;
-    padding-top: 11vw;
+    padding-top: 11.5vw;
     text-align: center;
     z-index: 13;
     position: relative;
     margin: 0;
 }
+
+h2 {
+    color: var(--text-color);
+    font-family: "DM Sans", sans-serif;
+    font-size: 2vw;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
 p {
     color: var(--text-color);
     font-family: "DM Sans", sans-serif;
     font-size: 1.5vw;
-    padding-left: 5vw;
-    padding-left: 5vw;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+.subtitle {
+    color: var(--title-color);
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-size: 2vw;
+    letter-spacing: 1vw;
+    width: 100%;
+    padding-top: 0.5vw;
+    text-align: center;
+    z-index: 13;
+    position: relative;
+    margin: 0;
 }
 
 .wall {
@@ -40,38 +65,61 @@ p {
     position: relative;
     overflow: hidden;
 }
+
 .image {
     height: 110%;
     top: 0;
     bottom: 0;
     position: absolute;
 }
+
 .image1 {
     z-index: 11;
-    filter: blur(5px);
-}
-.image2 {
-    z-index: 12;
     filter: blur(3px);
 }
+
+.image2 {
+    z-index: 12;
+    filter: blur(1.5px);
+}
+
 .image3 {
     z-index: 13;
-    filter: blur(1px);
+    filter: blur(0.5px);
 }
+
 .image4 {
     z-index: 14;
 }
+
 .image5 {
     z-index: 15;
 }
+
 .image6 {
     z-index: 16;
 }
+
 .image7 {
     z-index: 17;
 }
+
 .image8 {
     z-index: 18;
+}
+
+.lang-icon-container {
+    width: 100%;
+    text-align: center;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+.lang-icon {
+    width: 4vw;
+    height: 4vw;
+    margin: 0.5vw;
+    vertical-align: middle;
 }
 
 ::-webkit-scrollbar {
@@ -79,8 +127,8 @@ p {
 }
 
 :root {
-    --wall-bg-color: hsl(0, 0%, 100%);
-    --bg-color: hsl(0, 0%, 0%);
-    --title-color: hsl(0, 0%, 10%);
-    --text-color: hsl(0, 0%, 100%);
+    --wall-bg-color: hsl(168, 100%, 97%);
+    --bg-color: hsl(168, 100%, 5%);
+    --title-color: hsl(168, 100%, 10%);
+    --text-color: hsl(168, 100%, 97%);
 }
