@@ -32,6 +32,7 @@ h2 {
     font-size: 2vw;
     padding-left: 20vw;
     padding-right: 20vw;
+    text-align: center;
 }
 
 p {
@@ -40,6 +41,14 @@ p {
     font-size: 1.5vw;
     padding-left: 20vw;
     padding-right: 20vw;
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, var(--bg-color), var(--trans-color) 50%, var(--bg-color));
+    background-color: var(--trans-color);
+    border: none;
 }
 
 .subtitle {
@@ -109,21 +118,99 @@ p {
 }
 
 .lang-icon-container {
-    width: 100%;
     text-align: center;
-    padding-left: 20vw;
-    padding-right: 20vw;
+    align-content: center;
+    align-items: center;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-top: 2vw;
+    padding-top: 0vw;
+    padding-bottom: 0;
+    background-color: var(--lighter-text-color);
+    border-radius: 1vw;
+    border: 2px solid var(--trans-color);
 }
 
 .lang-icon {
-    width: 4vw;
-    height: 4vw;
-    margin: 0.5vw;
+    width: 6vw;
+    /* Set to max size for hover */
+    height: 6vw;
+    margin: 2vw;
     vertical-align: middle;
+    color: var(--trans-color);
+    font-size: 4vw;
+    transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1), font-size 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    /* Center icon inside fixed-size box */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: content-box;
+}
+
+.lang-icon:hover {
+    color: var(--text-color);
+    font-size: 5vw;
+}
+
+.footer {
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    margin: 0;
+    color: var(--text-color);
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.5vw;
+    background-color: var(--lighter-text-color);
+}
+
+.carousel {
+    position: relative;
+    width: 100vw;
+    height: 18vw;
+    overflow: hidden;
+    background: var(--wall-bg-color);
+    margin: 2vw 0;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-track {
+    display: flex;
+    width: max-content;
+    transition: transform 0.2s linear;
+}
+
+.carousel-item {
+    min-width: 14vw;
+    height: 14vw;
+    margin: 0 2vw;
+    background: var(--title-color);
+    border-radius: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    font-size: 5vw;
+    font-family: 'Lexend', sans-serif;
+    font-weight: bold;
+    box-shadow: 0 0 1vw var(--trans-color);
 }
 
 ::-webkit-scrollbar {
     display: none;
+}
+
+::-moz-selection {
+    /* Code for Firefox */
+    color: var(--bg-color);
+    background: var(--trans-color);
+}
+
+::selection {
+    color: var(--bg-color);
+    background: var(--trans-color);
 }
 
 :root {
@@ -131,4 +218,6 @@ p {
     --bg-color: hsl(168, 100%, 5%);
     --title-color: hsl(168, 100%, 10%);
     --text-color: hsl(168, 100%, 97%);
+    --trans-color: hsla(168, 100%, 97%, 0.5);
+    --lighter-text-color: hsl(168, 100%, 10%);
 }
