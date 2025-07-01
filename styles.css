@@ -30,6 +30,7 @@ h2 {
     color: var(--text-color);
     font-family: "DM Sans", sans-serif;
     font-size: 2vw;
+    padding-top: 1vw;
     padding-left: 20vw;
     padding-right: 20vw;
     text-align: center;
@@ -124,18 +125,18 @@ hr {
     margin-left: 20vw;
     margin-right: 20vw;
     margin-top: 2vw;
-    padding-top: 0vw;
-    padding-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 1vw;
     background-color: var(--lighter-text-color);
     border-radius: 1vw;
-    border: 2px solid var(--trans-color);
+    border: 1.5px solid var(--trans-color);
 }
 
 .lang-icon {
     width: 6vw;
     /* Set to max size for hover */
     height: 6vw;
-    margin: 2vw;
+    margin: 0vw;
     vertical-align: middle;
     color: var(--trans-color);
     font-size: 4vw;
@@ -152,6 +153,21 @@ hr {
     font-size: 5vw;
 }
 
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2vw;
+    margin-bottom: 2vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    padding-bottom: 0;
+    border-radius: 1vw;
+    border: 1.5px solid var(--trans-color);
+    background-color: var(--lighter-text-color);
+}
+
 .footer {
     bottom: 0;
     width: 100%;
@@ -163,56 +179,15 @@ hr {
     font-family: "DM Sans", sans-serif;
     font-size: 1.5vw;
     background-color: var(--lighter-text-color);
+    border-top: 1.5px solid var(--trans-color);
 }
 
-.ticker {
-    position: relative;
-    width: 100vw;
-    height: 18vw;
-    overflow: hidden;
-    background: var(--bg-color);
-    margin: 2vw 0;
-    display: flex;
-    align-items: center;
-}
-
-.ticker-track {
-    display: flex;
-    width: max-content;
-    will-change: transform;
-    background-color: var(--bg-color);
-}
-
-.ticker-item {
-    width: 20vw;
-    height: 14vw;
-    margin: 0 2vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--lighter-text-color);
-    border-radius: 1vw;
-    border: 2px solid var(--trans-color);
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-}
-
-.ticker-item:hover {
-    transform: translateY(-0.5vw) scale(1.05);
-    box-shadow: 0 1vw 2vw rgba(0, 0, 0, 0.2);
-}
-
-.ticker-image {
-    width: 100%;
+.loader {
+    position: fixed;
     height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
+    width: 100%;
 }
+
 
 ::-webkit-scrollbar {
     display: none;
@@ -221,12 +196,12 @@ hr {
 ::-moz-selection {
     /* Code for Firefox */
     color: var(--bg-color);
-    background: var(--trans-color);
+    background: var(--text-color);
 }
 
 ::selection {
     color: var(--bg-color);
-    background: var(--trans-color);
+    background: var(--text-color);
 }
 
 :root {
