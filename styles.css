@@ -65,13 +65,8 @@ p {
 
 hr {
   width: 100%;
-  height: 1px;
-  background: linear-gradient(
-    to right,
-    var(--bg-color),
-    var(--margin-color) 50%,
-    var(--bg-color)
-  );
+  height:  1.5px;
+  background: var(--margin-color);
   background-color: var(--margin-color);
   border: none;
 }
