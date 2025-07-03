@@ -44,7 +44,7 @@ h3 {
   font-family: "Bebas Neue", sans-serif;
   font-size: 2vw;
   letter-spacing: 0.2vw;
-  padding-top: 2vw;
+  padding-top: 1.5vw;
   padding-left: 20vw;
   padding-right: 20vw;
   padding-bottom: 1vw;
@@ -63,9 +63,22 @@ p {
   margin: 0;
 }
 
+ul {
+  margin-left: 35vw;
+  margin-right: 35vw;
+  margin-top: 0;
+  margin-bottom: 2vw;
+}
+
+li {
+  color: var(--text-color);
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5vw;
+}
+
 hr {
   width: 100%;
-  height:  1.5px;
+  height: 1.5px;
   background: var(--margin-color);
   background-color: var(--margin-color);
   border: none;
@@ -83,6 +96,11 @@ hr {
   z-index: 13;
   position: relative;
   margin: 0;
+}
+
+.list {
+  padding-left: 40vw;
+  padding-right: 40vw;
 }
 
 .wall {
@@ -236,16 +254,16 @@ hr {
 .footer {
   bottom: 0;
   width: 100%;
-  text-align: center;
   padding-top: 2vw;
-  padding-bottom: 2vw;
+  padding-bottom: 1vw;
   margin: 0;
   color: var(--text-color);
   font-family: "DM Sans", sans-serif;
-  font-size: 1.5vw;
   background-color: var(--widget-bg-color);
   border-top: 1.5px solid var(--margin-color);
+  text-align: center;
 }
+
 
 ::-webkit-scrollbar {
   display: none;
