@@ -169,16 +169,21 @@ hr {
     font-size: 5vw;
 }
 
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2vw;
+    margin: 2vw 20vw;
+    padding: 0;
+}
+
 .project-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 0vw;
-    margin-bottom: 2vw;
-    margin-left: 20vw;
-    margin-right: 20vw;
-    padding-bottom: 0;
+    margin: 0;
     border-radius: 1vw;
     border: 1.5px solid var(--margin-color);
     background-color: var(--widget-bg-color);
