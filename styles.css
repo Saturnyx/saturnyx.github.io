@@ -19,7 +19,7 @@ h1 {
     font-weight: 700;
     font-size: 7vw;
     width: 100%;
-    padding-top: 11.5vw;
+    padding-top: 20vh;
     text-align: center;
     z-index: 13;
     position: relative;
@@ -47,8 +47,8 @@ p {
 hr {
     width: 100%;
     height: 1px;
-    background: linear-gradient(to right, var(--bg-color), var(--trans-color) 50%, var(--bg-color));
-    background-color: var(--trans-color);
+    background: linear-gradient(to right, var(--bg-color), var(--margin-color) 50%, var(--bg-color));
+    background-color: var(--margin-color);
     border: none;
 }
 
@@ -127,9 +127,9 @@ hr {
     margin-top: 2vw;
     padding-top: 0;
     padding-bottom: 1vw;
-    background-color: var(--lighter-text-color);
+    background-color: var(--widget-bg-color);
     border-radius: 1vw;
-    border: 1.5px solid var(--trans-color);
+    border: 1.5px solid var(--margin-color);
 }
 
 .lang-icon {
@@ -138,7 +138,7 @@ hr {
     height: 6vw;
     margin: 0vw;
     vertical-align: middle;
-    color: var(--trans-color);
+    color: var(--icon-color);
     font-size: 4vw;
     transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1), font-size 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     /* Center icon inside fixed-size box */
@@ -149,7 +149,7 @@ hr {
 }
 
 .lang-icon:hover {
-    color: var(--text-color);
+    color: var(--icon-hover-color);
     font-size: 5vw;
 }
 
@@ -164,8 +164,23 @@ hr {
     margin-right: 20vw;
     padding-bottom: 0;
     border-radius: 1vw;
-    border: 1.5px solid var(--trans-color);
-    background-color: var(--lighter-text-color);
+    border: 1.5px solid var(--margin-color);
+    background-color: var(--widget-bg-color);
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--bg-color);
+    margin: 0;
+    border: none;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer {
@@ -178,15 +193,10 @@ hr {
     color: var(--text-color);
     font-family: "DM Sans", sans-serif;
     font-size: 1.5vw;
-    background-color: var(--lighter-text-color);
-    border-top: 1.5px solid var(--trans-color);
+    background-color: var(--widget-bg-color);
+    border-top: 1.5px solid var(--margin-color);
 }
 
-.loader {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-}
 
 
 ::-webkit-scrollbar {
@@ -205,10 +215,16 @@ hr {
 }
 
 :root {
-    --wall-bg-color: hsl(168, 100%, 97%);
     --bg-color: hsl(168, 100%, 5%);
+    --widget-bg-color: hsl(168, 100%, 10%);
+    --wall-bg-color: hsl(168, 100%, 97%);
+
     --title-color: hsl(168, 100%, 10%);
     --text-color: hsl(168, 100%, 97%);
-    --trans-color: hsla(168, 100%, 97%, 0.5);
     --lighter-text-color: hsl(168, 100%, 10%);
+
+    --margin-color: hsla(168, 100%, 97%, 0.5);
+    --icon-color: hsla(168, 100%, 97%, 0.5);
+    --icon-hover-color: hsl(168, 100%, 97%);
+
 }
