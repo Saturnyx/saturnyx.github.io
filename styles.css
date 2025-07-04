@@ -91,6 +91,77 @@ hr {
   border: none;
 }
 
+form {
+  width: 100%;
+  align-items: left;
+  padding: 0;
+  margin: 0;
+}
+
+input {
+  display: flex;
+  position: relative;
+  height: 20%vw;
+  padding: 1vw;
+  font-size: 1.5vw;
+  border: 1.5px solid var(--margin-color);
+  background-color: var(--widget-bg-color);
+  color: var(--text-color);
+  width: calc(100% - 2vw);
+  box-sizing: border-box;
+  max-width: 100%;
+  outline: none;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.2vw;
+  margin: 0.7vw;
+}
+
+textarea {
+  display: flex;
+  position: relative;
+  height: 50%vw;
+  padding: 1vw;
+  font-size: 1.5vw;
+  border: 1.5px solid var(--margin-color);
+  background-color: var(--widget-bg-color);
+  color: var(--text-color);
+  width: calc(100% - 2vw);
+  box-sizing: border-box;
+  max-width: 100%;
+  outline: none;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1vw;
+  margin: 0.7vw;
+}
+
+form button {
+  display: flex;
+  position: relative;
+  height: 20%vw;
+  padding: 0.5vw;
+  font-size: 1.5vw;
+  border: 1.5px solid var(--margin-color);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  width: calc(100% - 2vw);
+  box-sizing: border-box;
+  max-width: 100%;
+  outline: none;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1vw;
+  margin: 0.7vw;
+  margin-bottom: 1vw;
+  text-align: center;
+  justify-content: center;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+form button:hover {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
 .subtitle {
   color: var(--title-color);
   font-family: "Bebas Neue", sans-serif;
@@ -291,8 +362,10 @@ hr {
   display: flex;
   justify-content: left;
   align-items: flex-end;
-  height: 100%;
+  height: max-content;
   padding: 0;
+  padding-left: 4.7vw;
+  padding-right: 5vw;
   margin: 0;
 }
 
@@ -304,6 +377,19 @@ hr {
 }
 .footer-icon:hover {
   color: var(--icon-hover-color);
+}
+
+.footer-form-container {
+  display: flex;
+}
+
+::placeholder {
+  color: var(--margin-color);
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Edge 12 -18 */
+  color: var(--margin-color);
 }
 
 ::-webkit-scrollbar {
