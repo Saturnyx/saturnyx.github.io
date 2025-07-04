@@ -1,86 +1,86 @@
 html {
-  background-color: var(--bg-color);
   padding: 0;
   margin: 0;
+  background-color: var(--bg-color);
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
 body {
-  background-color: var(--bg-color);
-  font-family: "DM Sans", sans-serif;
   padding: 0;
   margin: 0;
+  background-color: var(--bg-color);
+  font-family: "DM Sans", sans-serif;
 }
 
 h1 {
+  position: relative;
+  z-index: 13;
+  width: 100%;
+  margin: 0;
+  font-size: 7vw;
   color: var(--title-color);
   font-family: "Lexend", sans-serif;
   font-weight: 700;
-  font-size: 7vw;
-  width: 100%;
   padding-top: 20vh;
   text-align: center;
-  z-index: 13;
-  position: relative;
-  margin: 0;
 }
 
 h2 {
+  margin: 0;
+  font-size: 3.5vw;
   color: var(--text-color);
   font-family: "Bebas Neue", sans-serif;
-  font-size: 3.5vw;
   letter-spacing: 0.3vw;
-  padding-top: 2vw;
+  padding-bottom: 0;
   padding-left: 20vw;
   padding-right: 20vw;
-  padding-bottom: 0;
-  margin: 0;
+  padding-top: 2vw;
   text-align: center;
 }
 
 h3 {
+  margin: 0;
+  font-size: 2vw;
   color: var(--text-color);
   font-family: "Bebas Neue", sans-serif;
-  font-size: 2vw;
   letter-spacing: 0.2vw;
-  padding-top: 1.5vw;
+  padding-bottom: 1vw;
   padding-left: 20vw;
   padding-right: 20vw;
-  padding-bottom: 1vw;
-  margin: 0;
+  padding-top: 1.5vw;
   text-align: center;
 }
 
 p {
+  margin: 0;
+  font-size: 1.5vw;
   color: var(--text-color);
   font-family: "DM Sans", sans-serif;
-  font-size: 1.5vw;
+  padding-bottom: 1vw;
   padding-left: 20vw;
   padding-right: 20vw;
   padding-top: 0vw;
-  padding-bottom: 1vw;
-  margin: 0;
 }
 
 a {
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
   display: inline-flex;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
 }
 
 ul {
+  margin-bottom: 2vw;
   margin-left: 35vw;
   margin-right: 35vw;
   margin-top: 0;
-  margin-bottom: 2vw;
 }
 
 li {
+  font-size: 1.5vw;
   color: var(--text-color);
   font-family: "DM Sans", sans-serif;
-  font-size: 1.5vw;
 }
 
 hr {
@@ -92,89 +92,89 @@ hr {
 }
 
 form {
+  align-items: left;
   width: 100%;
   height: 100%;
-  align-items: left;
   padding: 0;
   margin: 0;
 }
 
 input {
-  display: flex;
   position: relative;
+  display: flex;
+  width: calc(100% - 2vw);
   height: 20%vw;
   padding: 1vw;
+  margin: 0.7vw;
   font-size: 1.5vw;
-  border: 1.5px solid var(--margin-color);
-  background-color: var(--widget-bg-color);
+  font-size: 1.2vw;
   color: var(--text-color);
-  width: calc(100% - 2vw);
+  background-color: var(--widget-bg-color);
+  border: 1.5px solid var(--margin-color);
   box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
   max-width: 100%;
   outline: none;
-  font-family: "DM Sans", sans-serif;
-  font-size: 1.2vw;
-  margin: 0.7vw;
 }
 
 textarea {
-  display: flex;
   position: relative;
+  display: flex;
+  width: calc(100% - 2vw);
   height: 60%vw;
   padding: 1vw;
+  margin: 0.7vw;
   font-size: 1.5vw;
-  border: 1.5px solid var(--margin-color);
-  background-color: var(--widget-bg-color);
+  font-size: 1vw;
   color: var(--text-color);
-  width: calc(100% - 2vw);
+  background-color: var(--widget-bg-color);
+  border: 1.5px solid var(--margin-color);
   box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
   max-width: 100%;
   outline: none;
-  font-family: "DM Sans", sans-serif;
-  font-size: 1vw;
-  margin: 0.7vw;
 }
 
 form button {
-  display: flex;
   position: relative;
+  display: flex;
+  justify-content: center;
+  width: calc(100% - 2vw);
   height: 20%vw;
   padding: 1vw;
+  margin: 0.7vw;
   font-size: 1.5vw;
-  border: 1.5px solid var(--margin-color);
-  background-color: var(--bg-color);
+  font-size: 1.2vw;
   color: var(--text-color);
-  width: calc(100% - 2vw);
+  background-color: var(--bg-color);
+  border: 1.5px solid var(--margin-color);
   box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  margin-bottom: 1vw;
   max-width: 100%;
   outline: none;
-  font-family: "DM Sans", sans-serif;
-  font-size: 1.2vw;
-  margin: 0.7vw;
-  margin-bottom: 1vw;
   text-align: center;
-  justify-content: center;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 form button:hover {
-  background-color: var(--text-color);
   color: var(--bg-color);
+  background-color: var(--text-color);
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .subtitle {
+  position: relative;
+  z-index: 13;
+  width: 100%;
+  margin: 0;
+  font-size: 2vw;
   color: var(--title-color);
   font-family: "Bebas Neue", sans-serif;
   font-weight: 700;
-  font-size: 2vw;
   letter-spacing: 1vw;
-  width: 100%;
   padding-top: 0.5vw;
   text-align: center;
-  z-index: 13;
-  position: relative;
-  margin: 0;
 }
 
 .list {
@@ -183,21 +183,21 @@ form button:hover {
 }
 
 .wall {
-  height: 100vh;
+  position: relative;
   width: 100vw;
-  background-color: var(--wall-bg-color);
+  height: 100vh;
   padding: 0;
   margin: 0;
+  background-color: var(--wall-bg-color);
   border-bottom: 1.5px solid var(--margin-color);
-  position: relative;
   overflow: hidden;
 }
 
 .image {
-  height: 110%;
+  position: absolute;
   top: 0;
   bottom: 0;
-  position: absolute;
+  height: 110%;
 }
 
 .image1 {
@@ -236,67 +236,67 @@ form button:hover {
 }
 
 .lang-icon-container {
-  text-align: center;
-  align-content: center;
   align-items: center;
+  align-content: center;
+  background-color: var(--widget-bg-color);
+  border: 1.5px solid var(--margin-color);
+  border-radius: 1vw;
   margin-left: 20vw;
   margin-right: 20vw;
   margin-top: 2vw;
-  padding-top: 0;
   padding-bottom: 1vw;
-  background-color: var(--widget-bg-color);
-  border-radius: 1vw;
-  border: 1.5px solid var(--margin-color);
+  padding-top: 0;
+  text-align: center;
 }
 
 .lang-icon {
+  /* Center icon inside fixed-size box */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 6vw;
   /* Set to max size for hover */
   height: 6vw;
   margin: 0vw;
-  vertical-align: middle;
-  color: var(--icon-color);
   font-size: 4vw;
+  color: var(--icon-color);
+  box-sizing: content-box;
   transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
     font-size 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  /* Center icon inside fixed-size box */
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  box-sizing: content-box;
+  vertical-align: middle;
 }
 
 .lang-icon:hover {
-  color: var(--icon-hover-color);
   font-size: 5vw;
+  color: var(--icon-hover-color);
 }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2vw;
-  margin: 1vw 20vw;
   padding: 0;
+  margin: 1vw 20vw;
+  gap: 2vw;
+  grid-template-columns: 1fr 1fr;
 }
 
 .project-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   padding: 0vw;
   margin: 0;
-  border-radius: 1vw;
-  border: 1.5px solid var(--margin-color);
   background-color: var(--widget-bg-color);
+  border: 1.5px solid var(--margin-color);
+  border-radius: 1vw;
+  flex-direction: column;
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
 }
 
 .project-container:nth-child(odd):last-child {
   grid-column: span 2;
-  max-width: 50%;
   justify-self: center;
+  max-width: 50%;
 }
 
 .project-container:hover {
@@ -307,57 +307,57 @@ form button:hover {
 .project-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
-  margin: 0;
   padding: 0;
   margin: 0;
-  image-resolution: from-image;
+  margin: 0;
   image-rendering: crisp-edges;
+  image-resolution: from-image;
+  object-fit: cover;
+  object-position: center;
 }
 
 .loader {
   position: fixed;
   top: 0;
   left: 0;
-  height: 100vh;
-  width: 100vw;
-  background-color: var(--bg-color);
-  margin: 0;
-  border: none;
   z-index: 1000;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background-color: var(--bg-color);
+  border: none;
 }
 
 .footer {
   bottom: 0;
+  display: grid;
   width: 100%;
-  padding-top: 1vw;
-  padding-bottom: 1vw;
   margin: 0;
   color: var(--text-color);
-  font-family: "DM Sans", sans-serif;
   background-color: var(--widget-bg-color);
   border-top: 1.5px solid var(--margin-color);
-  text-align: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  font-family: "DM Sans", sans-serif;
   gap: 1vw;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 1vw;
+  padding-top: 1vw;
+  text-align: center;
 }
 
 .footer h2 {
-  text-align: left;
   padding-left: 5vw;
   padding-top: 0;
+  text-align: left;
 }
 .footer p {
-  text-align: justify;
+  margin: 0;
   font-size: 1.3vw;
   padding-left: 5vw;
   padding-right: 5vw;
-  margin: 0;
+  text-align: justify;
 }
 
 .footer-icon-container {
@@ -366,16 +366,16 @@ form button:hover {
   align-items: flex-end;
   height: max-content;
   padding: 0;
+  margin: 0;
   padding-left: 4.7vw;
   padding-right: 5vw;
-  margin: 0;
 }
 
 .footer-icon {
-  color: var(--icon-color);
-  font-size: 2vw;
-  transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   padding: 5px;
+  font-size: 2vw;
+  color: var(--icon-color);
+  transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icon:hover {
   color: var(--icon-hover-color);
@@ -391,7 +391,8 @@ form button:hover {
   opacity: 1; /* Firefox */
 }
 
-::-ms-input-placeholder { /* Edge 12 -18 */
+::-ms-input-placeholder {
+  /* Edge 12 -18 */
   color: var(--margin-color);
 }
 
