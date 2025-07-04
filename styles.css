@@ -93,6 +93,7 @@ hr {
 
 form {
   width: 100%;
+  height: 100%;
   align-items: left;
   padding: 0;
   margin: 0;
@@ -119,7 +120,7 @@ input {
 textarea {
   display: flex;
   position: relative;
-  height: 50%vw;
+  height: 60%vw;
   padding: 1vw;
   font-size: 1.5vw;
   border: 1.5px solid var(--margin-color);
@@ -138,7 +139,7 @@ form button {
   display: flex;
   position: relative;
   height: 20%vw;
-  padding: 0.5vw;
+  padding: 1vw;
   font-size: 1.5vw;
   border: 1.5px solid var(--margin-color);
   background-color: var(--bg-color);
@@ -148,7 +149,7 @@ form button {
   max-width: 100%;
   outline: none;
   font-family: "DM Sans", sans-serif;
-  font-size: 1vw;
+  font-size: 1.2vw;
   margin: 0.7vw;
   margin-bottom: 1vw;
   text-align: center;
@@ -187,6 +188,7 @@ form button:hover {
   background-color: var(--wall-bg-color);
   padding: 0;
   margin: 0;
+  border-bottom: 1.5px solid var(--margin-color);
   position: relative;
   overflow: hidden;
 }
@@ -381,6 +383,7 @@ form button:hover {
 
 .footer-form-container {
   display: flex;
+  height: 100%;
 }
 
 ::placeholder {
@@ -416,7 +419,7 @@ form button:hover {
   --text-color: hsl(168, 100%, 97%);
   --lighter-text-color: hsl(168, 100%, 10%);
 
-  --margin-color: hsla(168, 100%, 97%, 0.5);
+  --margin-color: hsl(167, 14%, 54%);
   --icon-color: hsla(168, 100%, 97%, 0.5);
   --icon-hover-color: hsl(168, 100%, 97%);
 }
