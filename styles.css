@@ -63,6 +63,13 @@ p {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+}
+
 ul {
   margin-left: 35vw;
   margin-right: 35vw;
@@ -254,7 +261,7 @@ hr {
 .footer {
   bottom: 0;
   width: 100%;
-  padding-top: 2vw;
+  padding-top: 1vw;
   padding-bottom: 1vw;
   margin: 0;
   color: var(--text-color);
@@ -262,8 +269,42 @@ hr {
   background-color: var(--widget-bg-color);
   border-top: 1.5px solid var(--margin-color);
   text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1vw;
 }
 
+.footer h2 {
+  text-align: left;
+  padding-left: 5vw;
+  padding-top: 0;
+}
+.footer p {
+  text-align: justify;
+  font-size: 1.3vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  margin: 0;
+}
+
+.footer-icon-container {
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-icon {
+  color: var(--icon-color);
+  font-size: 2vw;
+  transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 5px;
+}
+.footer-icon:hover {
+  color: var(--icon-hover-color);
+}
 
 ::-webkit-scrollbar {
   display: none;
