@@ -316,6 +316,27 @@ form button:hover {
   background-color: var(--bg-color);
 }
 
+.loader::after {
+  content: "LOADING...";
+  letter-spacing: 0.5rem;
+  opacity: 0;
+  color: var(--text-color);
+  font-family: "Arial", "Helvetica", "DM Sans", "Segoe UI", "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  animation: fadeIn 0.5s ease-in forwards;
+  animation-delay: 3s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .footer {
   bottom: 0;
   display: grid;
