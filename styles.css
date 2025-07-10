@@ -192,17 +192,17 @@ form button:hover {
 
 .image1 {
   z-index: 11;
-  filter: blur(3px);
+  filter: blur(5px);
 }
 
 .image2 {
   z-index: 12;
-  filter: blur(1.5px);
+  filter: blur(3px);
 }
 
 .image3 {
   z-index: 13;
-  filter: blur(0.5px);
+  filter: blur(1px);
 }
 
 .image4 {

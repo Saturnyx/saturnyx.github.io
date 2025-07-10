@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="600" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Filters for cloud texture -->
+    <filter id="filter-base" x="-50%" y="-50%" width="200%" height="200%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.011" numOctaves="5" seed="8517" />
+      <feDisplacementMap in="SourceGraphic" scale="120" />
+    </filter>
+    
+    <filter id="filter-back" x="-50%" y="-50%" width="200%" height="200%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.011" numOctaves="3" seed="8517" />
+      <feDisplacementMap in="SourceGraphic" scale="120" />
+    </filter>
+    
+    <filter id="filter-mid" x="-50%" y="-50%" width="200%" height="200%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.011" numOctaves="3" seed="8517" />
+      <feDisplacementMap in="SourceGraphic" scale="120" />
+    </filter>
+    
+    <filter id="filter-front" x="-50%" y="-50%" width="200%" height="200%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.009" numOctaves="4" seed="8517" />
+      <feDisplacementMap in="SourceGraphic" scale="50" />
+    </filter>
+    
+    <!-- Radial gradients to simulate the box-shadow blur effect -->
+    <radialGradient id="cloud-base-gradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:rgba(255, 255, 255, 0.9);stop-opacity:1" />
+      <stop offset="70%" style="stop-color:rgba(255, 255, 255, 0.7);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgba(255, 255, 255, 0);stop-opacity:0" />
+    </radialGradient>
+    
+    <radialGradient id="cloud-back-gradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:rgba(215, 215, 215, 0.3);stop-opacity:1" />
+      <stop offset="70%" style="stop-color:rgba(215, 215, 215, 0.2);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgba(215, 215, 215, 0);stop-opacity:0" />
+    </radialGradient>
+    
+    <radialGradient id="cloud-mid-gradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:rgba(66, 105, 146, 0.2);stop-opacity:1" />
+      <stop offset="70%" style="stop-color:rgba(66, 105, 146, 0.15);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgba(66, 105, 146, 0);stop-opacity:0" />
+    </radialGradient>
+    
+    <radialGradient id="cloud-front-gradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:rgba(0, 0, 0, 0.4);stop-opacity:1" />
+      <stop offset="70%" style="stop-color:rgba(0, 0, 0, 0.3);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgba(0, 0, 0, 0);stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="600" fill="transparent" />
+  
+  <!-- Cloud layers (from back to front) -->
+  
+  <!-- Cloud base - equivalent to box-shadow: 200px 170px 19px 40px rgba(255, 255, 255, 0.9) -->
+  <ellipse cx="340" cy="260" rx="340" ry="90" 
+           fill="url(#cloud-base-gradient)" 
+           filter="url(#filter-base)" />
+  
+  <!-- Cloud back - equivalent to box-shadow: 200px 200px 10px 40px rgba(215, 215, 215, 0.3) -->
+  <ellipse cx="340" cy="290" rx="290" ry="55" 
+           fill="url(#cloud-back-gradient)" 
+           filter="url(#filter-back)" />
+  
+  <!-- Cloud mid - equivalent to box-shadow: 210px 250px 28px 30px rgba(66, 105, 146, 0.2) -->
+  <ellipse cx="350" cy="330" rx="320" ry="75" 
+           fill="url(#cloud-mid-gradient)" 
+           filter="url(#filter-mid)" />
+  
+  <!-- Cloud front - equivalent to box-shadow: 210px 272px 30px 0px rgba(0, 0, 0, 0.4) -->
+  <ellipse cx="350" cy="352" rx="240" ry="70" 
+           fill="url(#cloud-front-gradient)" 
+           filter="url(#filter-front)" />
+</svg>
