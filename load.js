@@ -1,5 +1,6 @@
 function clear() {
   const loader = document.querySelector(".loader");
+  setTimeout(() => {}, 50);
   if (loader) {
     loader.style.opacity = "0";
     loader.style.transition = "opacity 0.8s ease-out";

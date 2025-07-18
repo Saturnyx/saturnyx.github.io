@@ -19,6 +19,7 @@ h1 {
   width: 100%;
   margin: 0;
   padding-top: 20vh;
+  padding-top: clamp(10vh, 20vh, 20vw);
   text-align: center;
   color: var(--title-color);
   font-family: "Lexend", sans-serif;
@@ -237,6 +238,7 @@ form button:hover {
   border: 1.5px solid var(--margin-color);
   border-radius: 1rem;
   background-color: var(--widget-bg-color);
+  transition: transform 0.4s cubic-bezier(0.03, 0.98, 0.52, 0.99), box-shadow 0.4s cubic-bezier(0.03, 0.98, 0.52, 0.99) !important;
 }
 
 .lang-icon {
