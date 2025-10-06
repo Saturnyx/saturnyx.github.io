@@ -24,7 +24,7 @@ h1 {
     padding-top: clamp(10vh, 20vh, 20vw);
     text-align: center;
     color: var(--title-color);
-    font-family: "Lexend", sans-serif;
+    font-family: "Mona Sans", sans-serif;
     font-size: 5.75rem;
     font-weight: 700;
 }
@@ -51,7 +51,7 @@ h3 {
 
 p {
     margin: 0;
-    padding: 0vw 20vw 1vw;
+    padding: 0vw 20vw;
     letter-spacing: 0.04rem;
     color: var(--text-color);
     font-family: "Mona Sans", sans-serif;
@@ -102,6 +102,7 @@ button {
     text-align: center;
     color: var(--text-color);
     border: 1.5px solid var(--margin-color);
+    border-radius: 1rem;
     outline: none;
     background-color: var(--bg-color);
     font-family: "Mona Sans", sans-serif;
@@ -141,6 +142,7 @@ input {
     padding: 1rem;
     color: var(--text-color);
     border: 1.5px solid var(--margin-color);
+    border-radius: 1rem 1rem 0 0;
     outline: none;
     background-color: var(--widget-bg-color);
     font-family: "Mona Sans", sans-serif;
@@ -178,6 +180,7 @@ form button {
     text-align: center;
     color: var(--text-color);
     border: 1.5px solid var(--margin-color);
+    border-radius: 0 0 1rem 1rem;
     outline: none;
     background-color: var(--bg-color);
     font-family: "Mona Sans", sans-serif;
@@ -273,7 +276,7 @@ form button:hover {
 .lang-icon-container {
     align-content: center;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 1.9rem;
     margin-right: 20vw;
     margin-left: 20vw;
     padding-top: 0;
