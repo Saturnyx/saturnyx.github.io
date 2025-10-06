@@ -102,7 +102,6 @@ button {
     text-align: center;
     color: var(--text-color);
     border: 1.5px solid var(--margin-color);
-    border-radius: 1rem;
     outline: none;
     background-color: var(--bg-color);
     font-family: "Mona Sans", sans-serif;
@@ -142,7 +141,6 @@ input {
     padding: 1rem;
     color: var(--text-color);
     border: 1.5px solid var(--margin-color);
-    border-radius: 1rem 1rem 0 0;
     outline: none;
     background-color: var(--widget-bg-color);
     font-family: "Mona Sans", sans-serif;
@@ -180,7 +178,6 @@ form button {
     text-align: center;
     color: var(--text-color);
     border: 1.5px solid var(--margin-color);
-    border-radius: 0 0 1rem 1rem;
     outline: none;
     background-color: var(--bg-color);
     font-family: "Mona Sans", sans-serif;
@@ -277,17 +274,12 @@ form button:hover {
     align-content: center;
     align-items: center;
     margin-top: 1.9rem;
-    margin-right: 20vw;
-    margin-left: 20vw;
     padding-top: 0;
     padding-bottom: 1rem;
     text-align: center;
-    border: 1.5px solid var(--margin-color);
-    border-radius: 1rem;
+    border-top: 1.5px solid var(--margin-color);
+    border-bottom: 1.5px solid var(--margin-color);
     background-color: var(--widget-bg-color);
-    transition:
-        transform 0.4s cubic-bezier(0.03, 0.98, 0.52, 0.99),
-        box-shadow 0.4s cubic-bezier(0.03, 0.98, 0.52, 0.99) !important;
 }
 
 .lang-icon {
@@ -315,7 +307,7 @@ form button:hover {
 }
 
 .projects-grid {
-    margin: 1rem 20vw;
+    margin: 0 20vw;
     padding: 0;
 }
 
@@ -328,7 +320,6 @@ form button:hover {
     margin: 1rem;
     padding: 0;
     border: 1.5px solid var(--margin-color);
-    border-radius: 1rem;
     background-color: var(--widget-bg-color);
     transition:
         transform 0.4s cubic-bezier(0.03, 0.98, 0.52, 0.99),
@@ -344,6 +335,7 @@ form button:hover {
     image-resolution: from-image;
     object-fit: cover;
     object-position: center;
+    border-right: 1.5px solid var(--margin-color);
 }
 
 .project-info-grid {
@@ -499,10 +491,10 @@ form button:hover {
     --wall-bg-color: hsl(168, 100%, 97%);
 
     --title-color: hsl(168, 100%, 10%);
-    --text-color: hsl(168, 100%, 97%);
+    --text-color: hsla(168, 100%, 98%, 0.9);
     --lighter-text-color: hsl(168, 100%, 10%);
 
     --margin-color: hsl(167, 14%, 54%);
     --icon-color: hsla(168, 100%, 97%, 0.5);
-    --icon-hover-color: hsl(168, 100%, 97%);
+    --icon-hover-color: hsla(168, 100%, 98%, 0.9);
 }
